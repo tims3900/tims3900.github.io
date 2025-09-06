@@ -9,9 +9,6 @@
 <body bgcolor="#1c1c1c" text="#c8cac1" link="#6ddbf3" vlink="#0b4a6f" alink="#ff0000">
 
     <font face="Courier New">
-        <marquee behavior="scroll" direction="right" scrollamount="1">
-            >=[◉"])
-        </marquee>
         <nav>
             <a href="../index.html">Home</a> |
             <a href="../project.html">Projects</a> |
@@ -21,17 +18,13 @@
         <h1>Kelp Coverage Calculation from UAV Imagery</h1>
         <h2>MBARI Summer Internship Project</h2>
 
-        <marquee behavior="scroll" direction="right" scrollamount="10">
-            ``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='``'-.,_,.-'``'-.,_,.='
-        </marquee>
-
         <p>
             <img src="../images/UAV_example.JPG" alt="A UAV image showing ocean and coastal kelp." width="500">
         </p>
 
         <p>Developed an automated pipeline to calculate kelp canopy coverage from standard RGB drone imagery, eliminating the need for expensive multi-spectral cameras. Processed 26,000+ high-resolution images across 6 Monterey Bay sites to monitor kelp forest health.</p>
 
-        <h3>Technical Approach:</h3>
+        <h3>Technical Details:</h3>
         <p><strong>Problem Inversion:</strong> Instead of segmenting fragmented kelp patches directly, the uniform water background was segmented instead and mask was inverted - much more reliable since water appears as cohesive regions.</p>
         <p><strong>SAM + SAHI Integration:</strong> Combined Segment Anything Model with Slicing Aided Hyper Inference to process 42-megapixel images efficiently. The pipeline automatically slices large images into manageable patches with intelligent overlap handling.</p>
         <p><strong>Smart Seed Point Generation:</strong> Developed automated algorithms to place optimal seed points for SAM using color analysis and Poisson disk sampling, ensuring comprehensive water region capture.</p>
@@ -45,6 +38,10 @@
         </p>
 
         <p><strong>GitHub Repository:</strong> <a href="https://github.com/mbari-org/KelpCoverage" style="color:#6ddbf3">https://github.com/mbari-org/KelpCoverage</a></p>
+
+        <marquee behavior="scroll" direction="right" scrollamount="1">
+            >[◉]
+        </marquee>
 
         <hr width="80%">
         <center>
