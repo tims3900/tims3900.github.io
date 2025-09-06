@@ -19,12 +19,11 @@
         <p>Built a 3D U-Net from scratch to automatically segment airways from CT scans, focusing on sub-2mm structures critical for detecting early-stage lung diseases like COPD and asthma. Achieved a Dice coefficient of 0.94 on limited training data.</p>
         <h3>Technical Details:</h3>
         <p><strong>3D Architecture:</strong> Implemented full 3D convolutional pipeline with encoder-decoder structure and skip connections. Used 3×3×3 kernels throughout to capture spatial relationships that 2D methods miss in complex branching airway structures.</p>
-        <p><strong>Data Challenge Solution:</strong> With only 25 training volumes (285MB each), developed smart preprocessing including lung cropping, 256×256×256 patch generation, and automated trachea removal to address data imbalance.</p>
-        <p><strong>Trachea Removal Algorithm:</strong> Created slice-by-slice analysis to identify and remove overrepresented tracheal structures, allowing the model to focus on clinically important smaller airways instead of being biased toward large structures.</p>
-        <h3>Results</h3>
-        <p>Achieved Dice coefficient of 0.94, competitive with published methods<br>
-        Successfully segmented complex 3D branching airway structures<br>
-        Contributed to research accepted for 2025 AAPM Annual Meeting</p>
+        <p><strong>Data Challenges:</strong> Having only 25 training volumes (285MB each), utilized data augmentation including lung cropping and patches.</p>
+        <p><strong>Trachea Removal:</strong> Created slice-by-slice analysis to identify and remove overrepresented tracheal structures, allowing the model to focus on clinically important smaller airways instead of being biased toward large structures.</p>
+        <h3>Results:</h3>
+        <p>Achieved Dice coefficient of 0.94<br>
+        Work presented at UROP undergraduate research symposium</p> 
         <p>
             <img src="../images/patch.png" alt="3D airway segmentation output overlaid on CT scan" width="500">
         </p>
@@ -43,3 +42,4 @@
     </font>
 </body>
 </html>
+
