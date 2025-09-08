@@ -3,37 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body bgcolor="#1c1c1c" text="#c8cac1" link="#6ddbf3" vlink="#0b4a6f" alink="#ff0000">
+<body>
+    <div class="grid">
+        <!-- Left Column -->
+        <div>
+            <div class="card content-card">
+                <div class="card-title">/home/tim/terminal</div>
+                <div class="card-text">
+                    <span class="highlight">tim@portfolio:~$</span> ls<br>
+                    <a href="index.html">Home</a> <a href="project.html">Projects</a> <a href="resume.html">Resume</a><br>
+                    <span class="highlight">tim@portfolio:~$</span><span class="cursor"></span>
+                </div>
+            </div>
+        </div>
 
-    <font face="Courier New">
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="project.html">Projects</a> |
-            <a href="resume.html">Resume</a>
-        </nav>
+        <!-- Right Column -->
+        <div>
+            <div class="card content-card">
+                <div class="card-title">/home/tim/projects</div>
+                <div class="card-text">
+                    <ul>
+                        <li><a href="projects/MBARI.html">Kelp Coverage from UAV imagery</a> – Analyzed UAV images with <span class="highlight">SAM</span> to monitor kelp forests.</li>
+                        <li><a href="projects/3DUnet.html">3D U-Net for airway segmentation</a> – Deep learning segmentation of CT scans with <span class="highlight">U-Net</span>.</li>
+                        <li><a href="projects/Nerf.html">NeRF model</a> – Reconstructed 3D scenes from 2D images with <span class="highlight">Neural Radiance Fields</span>.</li>
+                        <li><a href="projects/plant.html">Light-Sensing Plant Robot</a> – Built a robotic plant that responds to light with <span class="highlight">sensors</span>.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <h1>Projects</h1>
-        <ul>
-            <li><a href="projects/MBARI.html">Kelp Coverage from UAV imagery</a> – Analyzed UAV images to calculate kelp coverage using <font color="#be882e">SAM (Segment Anything Model)</font> for coastal ecosystem monitoring.</li>
-            <li><a href="projects/3DUnet.html">3D Unet for airway segmentation</a> – Developed a deep learning model for automatic airway segmentation in CT scans using <font color="#be882e"> U-Net</font>.</li>
-            <li><a href="projects/Nerf.html">NeRF model</a> – Reconstructed high-fidelity 3D scenes from 2D images using <font color="#be882e">Neural Radiance Fields (NeRF)</font>.</li>
-            <li><a href="projects/plant.html">Light-Sensing Plant Robot</a> – Built a robotic plant that responds to light using <font color="#be882e">sensors and actuators</font>.</li>
-        </ul>
-        <hr width="80%">
-        <center>
-            <p>
-                <small>
-                    Connect with me: 
-                    <a href="https://www.linkedin.com/in/yourprofile" style="color:#6ddbf3">LinkedIn</a> | 
-                    <a href="https://github.com/tims3900" style="color:#6ddbf3">GitHub</a> |
-                    <small>© 2025 Tim Sananikone</small>
-                </small>
-            </p>
-        </center>
-    </font>
+
+    <div class="footer-container">
+        <div class="card footer-card">
+            <div class="card-title">/home/tim/contacts.info</div>
+            <div class="card-text footer-content">
+                <a href="mailto:tims3900@gmail.com">email</a> |
+                <a href="https://github.com/tims3900">github</a> |
+                <a href="https://https://www.linkedin.com/in/tim-sananikone-742b84230/">linkedin</a>
+            </div>
+        </div>
+        <div class="card footer-card">
+            <div class="card-title">/home/tim/footer.md</div>
+            <div class="card-text footer-content">© 2025 Tim Sananikone</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
+
