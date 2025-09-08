@@ -60,28 +60,31 @@ const asciiArt = [
 ];
 
 let animationInterval;
-const artElement = document.getElementById('ascii');
 
-function displayRandomArt() {
-    setTimeout(() => {
-        if (animationInterval) clearInterval(animationInterval);
+document.addEventListener('DOMContentLoaded', () => {
+    const artElement = document.getElementById('ascii');
 
-        const randomArt = asciiArt[Math.floor(Math.random() * asciiArt.length)];
+    function displayRandomArt() {
+        setTimeout(() => {
+            if (animationInterval) clearInterval(animationInterval);
 
-        if (randomArt.type === "animation") {
-            let currentFrame = 0;
-            function animateFrames() {
-                let frame = randomArt.frames[currentFrame];
-                frame = colorizeDance(frame);
-                artElement.innerHTML = frame;
-                currentFrame = (currentFrame + 1) % randomArt.frames.length;
+            const randomArt = asciiArt[Math.floor(Math.random() * asciiArt.length)];
+
+            if (randomArt.type === "animation") {
+                let currentFrame = 0;
+                function animateFrames() {
+                    let frame = randomArt.frames[currentFrame];
+                    frame = colorizeDance(frame);
+                    artElement.innerHTML = frame;
+                    currentFrame = (currentFrame + 1) % randomArt.frames.length;
+                }
+                animateFrames();
+                animationInterval = setInterval(animateFrames, 1000);
+            } else {
+                artElement.textContent = rawBonsai;
             }
-            animateFrames();
-            animationInterval = setInterval(animateFrames, 1000);
-        } else {
-            artElement.textContent  = rawBonsai;
-        }
-    }, 1);
-}
+        }, 100);
+    }
 
-window.addEventListener('load', displayRandomArt);
+    displayRandomArt();
+});
