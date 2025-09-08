@@ -1,0 +1,91 @@
+body {
+    background-color: #282828;
+    color: #ebdbb2;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.bonsai-leaf { color: #3ba55d; }
+.bonsai-bark { color: #6b4423; }
+.bonsai-pot  { color: #888888; }
+
+.card {
+    border: 2px solid #928374;
+    background-color: transparent;
+    padding: 20px;
+    margin: 15px auto;
+    text-align: left;
+    position: relative;
+}
+
+.content-card, .footer-card {
+    max-width: 600px;
+    min-width: 400px;
+}
+
+.card-title {
+    color: #83a598;
+    background-color: #282828;
+    padding: 0 10px;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+
+.card-text {
+    color: #ebdbb2;
+    line-height: 1.4;
+}
+
+.highlight {
+    color: #fabd2f;
+}
+
+.footer-card {
+    margin-top: 40px;
+    border-color: #928374;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    color: #83a598;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: start;
+}
+
+.cursor {
+    display: inline-block;
+    width: 7px;
+    height: 1em;
+    background-color: #ebdbb2;
+    margin-left: 8px;
+    vertical-align: middle;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    50.01%, 100% { opacity: 0; }
+}

@@ -4,59 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+<body>
+    <div class="grid">
+        <!-- Left Column -->
+        <div>
+            <div class="card content-card">
+                <div class="card-title">/home/tim/terminal</div>
+                <div class="card-text">
+                    <span class="highlight">tim@portfolio:~$</span> ls<br>
+                    <a href="index.html">Home</a> <a href="project.html">Projects</a> <a href="resume.html">Resume </a><br>
+                    <span class="highlight">tim@portfolio:~$</span><span class="cursor"></span>
+                </div>
+            </div>
 
-<body bgcolor="#1c1c1c" text="#c8cac1" link="#6ddbf3" vlink="#0b4a6f" alink="#ff0000">
+            <div class="card content-card">
+                <div class="card-title">/home/tim/ascii-terminal</div>
+                <div class="card-text">
+                    <pre id="ascii"> //LOADING </pre>
+                </div>
+            </div>
+        </div>
 
-    <font face="Courier New">
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="project.html">Projects</a> |
-            <a href="resume.html">Resume</a>
-        </nav>
+        <!-- Right Column -->
+        <div>
+            <div class="card content-card">
+                <div class="card-title">/home/tim/welcome.txt</div>
+                <div class="card-text">
+                    Hello! I'm <span class="highlight">Tim</span>. This is my little personal website. I enjoy the charm of static websites, so you'll find no fancy CSS or TypeScript here (for now...)
+                </div>
+            </div>
 
+            <div class="card content-card">
+                <div class="card-title">/home/tim/about.txt</div>
+                <div class="card-text">
+                    <p>
+                        I am a recent <font color="#be882e">Computer Science</font> graduate from <font color="#be882e">UC Irvine</font> with a degree in <font color="#be882e">Computer Science</font>.<br><br>
+                        I am driven by my passion for <font color="#be882e">machine learning</font>, especially <font color="#be882e">computer vision</font> tasks, and its potential to create real-world impact across <font color="#be882e">interdisciplinary fields</font>.<br><br>
+                        During my time at university, I had the opportunity to work in the <font color="#be882e">Molloi Lab</font>, a medical imaging research lab, where I applied machine learning techniques to detect early signs of diseases from CT scans.<br><br>
+                        Later, I had the opportunity to apply my skills in an entirely new domain as an intern with <font color="#be882e">MBARI</font>. There, I analyzed UAV images to help researchers measure kelp coverage and better understand the health of our marine ecosystems.<br><br>
+                        I hope to continue applying my skills to a variety of fields that combine computation, science, and real-world impact.
+                    </p>
+                </div>
+            </div>
 
-        <h1>
-            Welcome to My Portfolio
-        </h1>
-        <p>
-            Hello! I'm <font color="#be882e">Tim</font>. This is my little personal website. I really enjoy the charm of static websites, so you'll find no fancy CSS or TypeScript here (for now...)
-        </p>
+        </div>
+    </div>
 
-        <h2>
-            About Me
-        </h2>
-        <p>
-            I am a recent <font color="#be882e">Computer Science</font> graduate from <font color="#be882e">UC Irvine</font> with a degree in <font color="#be882e">Computer Science</font>.
-            I am driven by my passion for <font color="#be882e">machine learning</font>, especially <font color="#be882e">computer vision</font> tasks, and its potential to create real-world impact across <font color="#be882e">interdisciplinary fields</font>.<br><br>
-
-            During my time at university, I had the opportunity to work in the <font color="#be882e">Molloi Lab</font>, a medical imaging research lab, where I applied machine learning techniques to detect early signs of diseases from CT scans.<br><br>
-
-            Later, I had the opportunity to apply my skills in an entirely new domain as an intern with <font color="#be882e">MBARI</font>.There, I analyzed UAV images to help researchers measure kelp coverage and better understand the health of our marine ecosystems.<br><br>
-
-            I hope to continue applying my skills to a variety of fields that combine computation, science, and real-world impact.
-        </p>
-
-
-        <h2> Some cool pictures :D
-        </h2>
-        <center>
-            <table border="1" cellpadding="10" cellspacing="0">
-                <tr>
-                    <td><img src="images/kelp.JPG" width="200"></td>
-                    <td><img src="images/custom_phantom.png" width="200"></td>
-                    <td><img src="images/cat.jpg" width="200"></td>
-                </tr>
-            </table>
-        </center>
-        <hr width="80%">
-        <center>
-            <p><small>
-                    © 2025 Tim Sananikone
-                </small></p>
-        </center>
-    </font>
-
+    <div class="footer-container">
+        <div class="card footer-card">
+            <div class="card-title">/home/tim/contacts.info</div>
+            <div class="card-text footer-content">
+                <a href="mailto:tims3900@gmail.com">email</a> |
+                <a href="https://github.com/tims3900">github</a> |
+                <a href="https://https://www.linkedin.com/in/tim-sananikone-742b84230/">linkedin</a>
+            </div>
+        </div>
+        <div class="card footer-card">
+            <div class="card-title">/home/tim/footer.md</div>
+            <div class="card-text footer-content">Â© 2025 Tim Sananikone</div>
+        </div>
+    </div>
 </body>
-
 </html>
