@@ -1,45 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>3D U-Net for Airway Segmentation</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body bgcolor="#1c1c1c" text="#c8cac1" link="#6ddbf3" vlink="#0b4a6f" alink="#ff0000">
-    <font face="Courier New">
-        <nav>
-            <a href="../index.html">Home</a> |
-            <a href="../project.html">Projects</a> |
-            <a href="../resume.html">Resume</a>
-        </nav>
-        <h1>3D U-Net for Airway Segmentation</h1>
-        <h2>UROP Fellowship Project - Molloi Lab, UCI</h2>
-        <p>
-            <img src="../images/full.gif" alt="CT scan showing airway structures" width="500">
-        </p>
-        <p>Built a 3D U-Net from scratch to automatically segment airways from CT scans, focusing on sub-2mm structures critical for detecting early-stage lung diseases like COPD and asthma. Achieved a Dice coefficient of 0.94 on limited training data.</p>
-        <h3>Technical Details:</h3>
-        <p><strong>3D Architecture:</strong> Implemented full 3D convolutional pipeline with encoder-decoder structure and skip connections. Used 3×3×3 kernels throughout to capture spatial relationships that 2D methods miss in complex branching airway structures.</p>
-        <p><strong>Data Challenges:</strong> Having only 25 training volumes (285MB each), utilized data augmentation including lung cropping and patches.</p>
-        <p><strong>Trachea Removal:</strong> Created slice-by-slice analysis to identify and remove overrepresented tracheal structures, allowing the model to focus on clinically important smaller airways instead of being biased toward large structures.</p>
-        <h3>Results:</h3>
-        <p>Achieved Dice coefficient of 0.94<br>
-        Work presented at UROP undergraduate research symposium</p> 
-        <p>
-            <img src="../images/patch.png" alt="3D airway segmentation output overlaid on CT scan" width="500">
-        </p>
-        <p><strong>GitHub Repository:</strong> <a href="https://github.com/tims3900/3D-Unet-Airway" style="color:#6ddbf3">https://github.com/tims3900/3D-Unet-Airway</a></p>
-        <hr width="80%">
-        <center>
-            <p>
-                <small>
-                    Connect with me:
-                    <a href="https://www.linkedin.com/in/tim-sananikone-742b84230/" style="color:#6ddbf3">LinkedIn</a> |
-                    <a href="https://github.com/tims3900" style="color:#6ddbf3">GitHub</a> |
-                    <small>© 2025 Tim Sananikone</small>
-                </small>
-            </p>
-        </center>
-    </font>
-</body>
-</html>
 
+<body>
+    <div class="grid">
+        <!-- Left Column -->
+        <div>
+            <div class="card content-card">
+                <div class="card-title">/home/tim/terminal</div>
+                <div class="card-text">
+                    <span class="highlight">tim@portfolio:~$</span> ls<br>
+                    <a href="../index.html">Home</a> <a href="../project.html">Projects</a> <a href="../resume.html">Resume</a><br>
+                    <span class="highlight">tim@portfolio:~$</span><span class="cursor"></span>
+                </div>
+            </div>
+
+            <div class="card content-card">
+                <div class="card-title">/home/tim/projects/3DUnet</div>
+                <div class="card-text">
+                    <h2>UROP Fellowship Project - Molloi Lab, UCI</h2>
+                    <p>Built a 3D U-Net to automatically segment airways from CT scans, focusing on sub-2mm structures critical for early detection of lung diseases. Achieved a Dice coefficient of 0.94 on limited training data.</p>
+                    <h3>Technical Details</h3>
+                    <p><strong>Architecture:</strong> 3D encoder-decoder with skip connections, 3×3×3 kernels.</p>
+                    <p><strong>Data:</strong> 25 volumes (285MB each), augmentation with cropping/patches.</p>
+                    <p><strong>Trachea Removal:</strong> Custom slice-based method to avoid large airway bias.</p>
+                    <h3>Results</h3>
+                    <p>Dice: 0.94<br> Presented at UROP symposium</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/tims3900/3D-Unet-Airway">3D-Unet-Airway</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div>
+            <div class="card content-card">
+                <div class="card-title">/home/tim/projects/3DUnet/full.gif</div>
+                <div class="card-text" style="text-align:center">
+                    <img src="../images/full.gif" width="250">
+                </div>
+            </div>
+
+            <div class="card content-card">
+                <div class="card-title">/home/tim/projects/3DUnet/patch.png</div>
+                <div class="card-text" style="text-align:center">
+                    <img src="../images/patch.png" width="250">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="card footer-card">
+            <div class="card-title">/home/tim/contacts.info</div>
+            <div class="card-text footer-content">
+                <a href="mailto:tims3900@gmail.com">email</a> |
+                <a href="https://github.com/tims3900">github</a> |
+                <a href="https://www.linkedin.com/in/tim-sananikone-742b84230/">linkedin</a>
+            </div>
+        </div>
+        <div class="card footer-card">
+            <div class="card-title">/home/tim/footer.md</div>
+            <div class="card-text footer-content">© 2025 Tim Sananikone</div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>

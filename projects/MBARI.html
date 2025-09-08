@@ -4,57 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Kelp Coverage from UAV Imagery</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
-<body bgcolor="#1c1c1c" text="#c8cac1" link="#6ddbf3" vlink="#0b4a6f" alink="#ff0000">
+<body>
+    <div class="grid">
+        <!-- Left Column -->
+        <div>
+            <div class="card content-card">
+                <div class="card-title">/home/tim/terminal</div>
+                <div class="card-text">
+                    <span class="highlight">tim@portfolio:~$</span> ls<br>
+                    <a href="../index.html">Home</a> <a href="../project.html">Projects</a> <a href="../resume.html">Resume</a><br>
+                    <span class="highlight">tim@portfolio:~$</span><span class="cursor"></span>
+                </div>
+            </div>
 
-    <font face="Courier New">
-        <nav>
-            <a href="../index.html">Home</a> |
-            <a href="../project.html">Projects</a> |
-            <a href="../resume.html">Resume</a>
-        </nav>
+            <div class="card content-card">
+                <div class="card-title">/home/tim/projects/MBARI</div>
+                <div class="card-text">
+                    <h2>MBARI Summer Internship</h2>
+                    <p>Automated pipeline for kelp canopy coverage from RGB UAV imagery. Processed 26,000+ high-res images from Monterey Bay to monitor kelp forests without multispectral sensors.</p>
+                    <h3>Technical Details</h3>
+                    <p><strong>Problem Inversion:</strong> Segment water background, then invert mask.</p>
+                    <p><strong>SAM + SAHI:</strong> Processed 42MP images by slicing into patches.</p>
+                    <p><strong>Seed Pointing:</strong> Automated placement using color + Poisson disk sampling.</p>
+                    <h3>Results</h3>
+                    <p>Processed 26,000+ images across 6 sites<br>Created ground truth dataset</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/mbari-org/KelpCoverage">KelpCoverage</a></p>
+                </div>
+            </div>
+        </div>
 
-        <h1>Kelp Coverage Calculation from UAV Imagery</h1>
-        <h2>MBARI Summer Internship Project</h2>
+        <!-- Right Column -->
+        <div>
+            <div class="card content-card">
+                <div class="card-title">/home/tim/projects/MBARI/UAV_example.JPG</div>
+                <div class="card-text" style="text-align:center">
+                    <img src="../images/UAV_example.JPG" width="250">
+                </div>
+            </div>
 
-        <p>
-            <img src="../images/UAV_example.JPG" alt="A UAV image showing ocean and coastal kelp." width="500">
-        </p>
+            <div class="card content-card">
+                <div class="card-title">/home/tim/projects/MBARI/Mask_example.JPG</div>
+                <div class="card-text" style="text-align:center">
+                    <img src="../images/Mask_example.JPG" width="250">
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <p>Developed an automated pipeline to calculate kelp canopy coverage from standard RGB drone imagery, eliminating the need for expensive multi-spectral cameras. Processed 26,000+ high-resolution images across 6 Monterey Bay sites to monitor kelp forest health.</p>
-
-        <h3>Technical Details:</h3>
-        <p><strong>Problem Inversion:</strong> Instead of segmenting fragmented kelp patches directly, the uniform water background was segmented instead and mask was inverted - much more reliable since water appears as cohesive regions.</p>
-        <p><strong>SAM + SAHI Integration:</strong> Combined Segment Anything Model with Slicing Aided Hyper Inference to process 42-megapixel images efficiently. The pipeline automatically slices large images into manageable patches with intelligent overlap handling.</p>
-        <p><strong>Smart Seed Point Generation:</strong> Developed automated algorithms to place optimal seed points for SAM using color analysis and Poisson disk sampling, ensuring comprehensive water region capture.</p>
-
-        <h3>Results:</h3>
-        <p>Successfully processed 26,000+ images from 6 survey sites<br>
-            Created ground truth dataset through manual annotation and vegetation indices<br>
-
-        <p>
-            <img src="../images/Mask_example.JPG" alt="Final joined kelp mask." width="500">
-        </p>
-
-        <p><strong>GitHub Repository:</strong> <a href="https://github.com/mbari-org/KelpCoverage" style="color:#6ddbf3">https://github.com/mbari-org/KelpCoverage</a></p>
-
-        <marquee behavior="scroll" direction="right" scrollamount="1">
-            >[◉]
-        </marquee>
-
-        <hr width="80%">
-        <center>
-            <p>
-                <small>
-                    Connect with me:
-                    <a href="https://www.linkedin.com/in/tim-sananikone-742b84230/" style="color:#6ddbf3">LinkedIn</a> |
-                    <a href="https://github.com/tims3900" style="color:#6ddbf3">GitHub</a> |
-                    <small>© 2025 Tim Sananikone</small>
-                </small>
-            </p>
-        </center>
-    </font>
+    <div class="footer-container">
+        <div class="card footer-card">
+            <div class="card-title">/home/tim/contacts.info</div>
+            <div class="card-text footer-content">
+                <a href="mailto:tims3900@gmail.com">email</a> |
+                <a href="https://github.com/tims3900">github</a> |
+                <a href="https://www.linkedin.com/in/tim-sananikone-742b84230/">linkedin</a>
+            </div>
+        </div>
+        <div class="card footer-card">
+            <div class="card-title">/home/tim/footer.md</div>
+            <div class="card-text footer-content">Â© 2025 Tim Sananikone</div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
 </body>
 
 </html>
