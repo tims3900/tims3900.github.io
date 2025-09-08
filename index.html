@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
     <div class="grid">
-        <!-- Left Column -->
         <div>
             <div class="card content-card">
                 <div class="card-title">/home/tim/terminal</div>
@@ -16,18 +16,24 @@
                     <span class="highlight">tim@portfolio:~$</span> ls<br>
                     <a href="index.html">Home</a> <a href="project.html">Projects</a> <a href="resume.html">Resume </a><br>
                     <span class="highlight">tim@portfolio:~$</span><span class="cursor"></span>
-                </div>
+                </div> 
             </div>
 
             <div class="card content-card">
-                <div class="card-title">/home/tim/ascii-terminal</div>
-                <div class="card-text">
-                    <pre id="ascii"> //LOADING </pre>
+                <div class="card-title" id="ascii-title">/home/tim/ascii-terminal</div>
+                <div class="card-text ascii-container">
+                    <pre id="ascii">
+██╗      ██████╗  █████╗ ██████╗ ██╗███╗   ██╗ ██████╗ 
+██║     ██╔═══██╗██╔══██╗██╔══██╗██║████╗  ██║██╔════╝ 
+██║     ██║   ██║███████║██║  ██║██║██╔██╗ ██║██║  ███╗
+██║     ██║   ██║██╔══██║██║  ██║██║██║╚██╗██║██║   ██║
+███████╗╚██████╔╝██║  ██║██████╔╝██║██║ ╚████║╚██████╔╝
+╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+                    </pre>
                 </div>
             </div>
         </div>
 
-        <!-- Right Column -->
         <div>
             <div class="card content-card">
                 <div class="card-title">/home/tim/welcome.txt</div>
@@ -67,5 +73,6 @@
         </div>
     </div>
     <script src="script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

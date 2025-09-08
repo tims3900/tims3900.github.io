@@ -39,6 +39,27 @@ body {
     line-height: 1.4;
 }
 
+.ascii-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#ascii {
+    white-space: pre;
+    line-height: 1.2;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: #ebdbb2;
+    display: inline-block;
+}
+
+.ripple-active {
+    user-select: none;
+    cursor: crosshair;
+}
+
 .highlight {
     color: #fabd2f;
 }
@@ -73,7 +94,7 @@ a:hover {
     max-width: 1200px;
     margin: auto;
     align-items: start;
-}
+} 
 
 .cursor {
     display: inline-block;
