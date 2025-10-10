@@ -7,10 +7,6 @@ body {
     text-align: center;
 }
 
-.bonsai-leaf { color: #3ba55d; }
-.bonsai-bark { color: #6b4423; }
-.bonsai-pot  { color: #888888; }
-
 .card {
     border: 2px solid #928374;
     background-color: transparent;
@@ -21,8 +17,8 @@ body {
 }
 
 .content-card, .footer-card {
-    max-width: 600px;
-    min-width: 400px;
+    max-width: 500px;
+    min-width: 500px;
 }
 
 .card-title {
@@ -51,13 +47,19 @@ body {
     line-height: 1.2;
     font-size: 12px;
     letter-spacing: 0.1em;
-    color: #ebdbb2;
     display: inline-block;
 }
 
-.ripple-active {
-    user-select: none;
-    cursor: crosshair;
+#ascii.fine-renderer-active {
+    font-size: 8px;
+    line-height: 8px;
+    letter-spacing: normal;
+}
+
+#ascii.boid-renderer-active {
+    font-size: 4px;
+    line-height: 4px;
+    letter-spacing: normal;
 }
 
 .highlight {
@@ -109,5 +111,10 @@ a:hover {
 @keyframes blink {
     0%, 50% { opacity: 1; }
     50.01%, 100% { opacity: 0; }
-
 }
+
+#info-card {
+    display: none;
+}
+
+

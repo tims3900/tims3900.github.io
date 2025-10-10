@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-<link type="text/css" rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
     <div class="grid">
@@ -16,14 +15,14 @@
                     <span class="highlight">tim@portfolio:~$</span> ls<br>
                     <a href="index.html">Home</a> <a href="project.html">Projects</a> <a href="resume.html">Resume </a><br>
                     <span class="highlight">tim@portfolio:~$</span><span class="cursor"></span>
-                </div> 
+                </div>
             </div>
 
             <div class="card content-card">
                 <div class="card-title" id="ascii-title">/home/tim/ascii-terminal</div>
                 <div class="card-text ascii-container">
                     <pre id="ascii">
-██╗      ██████╗  █████╗ ██████╗ ██╗███╗   ██╗ ██████╗ 
+██╗     ██████╗  █████╗  ██████╗ ██╗███╗   ██╗ ██████╗ 
 ██║     ██╔═══██╗██╔══██╗██╔══██╗██║████╗  ██║██╔════╝ 
 ██║     ██║   ██║███████║██║  ██║██║██╔██╗ ██║██║  ███╗
 ██║     ██║   ██║██╔══██║██║  ██║██║██║╚██╗██║██║   ██║
@@ -31,6 +30,11 @@
 ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝ 
                     </pre>
                 </div>
+            </div>
+
+            <div class="card content-card" id="info-card">
+                <div class="card-title" id="info-title">/home/tim/simulation.info</div>
+                <div class="card-text" id="info-text"></div>
             </div>
         </div>
 
@@ -45,13 +49,11 @@
             <div class="card content-card">
                 <div class="card-title">/home/tim/about.txt</div>
                 <div class="card-text">
-                    <p>
-                        I am a recent graduate from <font color="#be882e">UC Irvine</font> with a degree in <font color="#be882e">Computer Science</font> currently working as a research collaborator at <font color="#be882e">MBARI</font>.<br><br>
-                        I am driven by my passion for <font color="#be882e">machine learning</font>, especially <font color="#be882e">computer vision</font> tasks, and its potential to create real-world impact across <font color="#be882e">interdisciplinary fields</font>.<br><br>
-                        During my time at university, I had the opportunity to work in the <font color="#be882e">Molloi Lab</font>, a medical imaging research lab, where I applied machine learning techniques to detect early signs of diseases from CT scans.<br><br>
-                        Later, I had the opportunity to apply my skills in an entirely new domain as an intern with <font color="#be882e">MBARI</font>. There, I analyzed UAV images to help researchers measure kelp coverage and better understand the health of our marine ecosystems.<br><br>
+                        I am a recent graduate from <span class="highlight">UC Irvine</span> with a degree in <span class="highlight">Computer Science</span>.<br><br>
+                        I am driven by my passion for <span class="highlight">machine learning</span>, especially <span class="highlight">computer vision</span> tasks, and its potential to create real-world impact across <span class="highlight">interdisciplinary fields</span>.<br><br>
+                        During my time at university, I had the opportunity to work in the <span class="highlight">Molloi Lab</span>, a medical imaging research lab, where I applied machine learning techniques to detect early signs of diseases from CT scans.<br><br>
+                        Later, I had the opportunity to apply my skills in an entirely new domain as an intern with <span class="highlight">MBARI</span>. There, I analyzed UAV images to help researchers measure kelp coverage and better understand the health of our marine ecosystems.<br><br>
                         I hope to continue applying my skills to a variety of fields that combine computation, science, and real-world impact.
-                    </p>
                 </div>
             </div>
 
@@ -72,7 +74,8 @@
             <div class="card-text footer-content">© 2025 Tim Sananikone</div>
         </div>
     </div>
-    <script src="script.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+    
+    <script type="module" src="main.js"></script>
 </body>
 </html>
+
